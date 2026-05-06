@@ -12,7 +12,7 @@
   --bs-gray-500: #D0C9C8;
   --bs-gray-600: #BBB4B3;
   --bs-gray-700: #AAA3A2;
-  --bs-gray-800: #898281;
+  --bs-gray-800: #7A7372;
   --bs-gray-900: #29293D;
   --bs-black: #29293D;
   --bs-blue: #0B7263;
@@ -369,7 +369,7 @@ h6 {
   border-radius: 1rem;
   padding: .2rem .75rem;
   font-size: .7rem;
-  color: var(--bs-gray-700);
+  color: var(--bs-gray-800);
   font-family: monospace;
   border: 1px solid var(--bs-gray-300);
 }
@@ -634,13 +634,6 @@ h6 {
   font-size: .75rem;
 }
 
-.art .item-num {
-  font-size: .65rem;
-  letter-spacing: 0.15em;
-  color: var(--bs-gray-700);
-  text-transform: uppercase;
-}
-
 .art .lb-frame {
   background: var(--bs-white);
   border-radius: var(--bs-border-radius);
@@ -675,7 +668,7 @@ h6 {
 .art .lb-counter {
   font-size: .65rem;
   letter-spacing: 0.15em;
-  color: var(--bs-gray-700);
+  color: var(--bs-gray-800);
   text-transform: uppercase;
 }
 
