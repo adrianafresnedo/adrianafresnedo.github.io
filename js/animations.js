@@ -35,12 +35,6 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     document.querySelectorAll('.reveal-heading').forEach(el => observer.observe(el));
 }
 
-// ─── Loaded Reveal ───────────────────────────────────────────────────────
-window.addEventListener("load", function () {
-    const loader = document.getElementById("loader");
-    loader.classList.add("d-none"); // Hides the loader
-});
-
 // ─── Tabbed content ───────────────────────────────────────────────────────
 function switchTab(tabName) {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
