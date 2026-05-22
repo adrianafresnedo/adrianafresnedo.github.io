@@ -27,7 +27,7 @@
 
 <body>
 <header id="header" class="mb-4" aria-label="Main navigation">
-    <div class="container-xxl">
+    <div class="container">
         <nav class="row align-items-center">
             <div class="col-2"><a href="index.html" class="initials" title="homepage">AF</a></div>
             <div class="col-10 menu text-end">
@@ -43,19 +43,18 @@
     </div>
 </header>
 <div id="nav-spacer"></div>
-<main class="container-xxl">
+<main class="container">
     <section class="project row">
         <div class="col-12 col-lg-8">
             <h1 class="h2 reveal-heading icon__ticket mb-3">Peninsula Hotels Customization</h1>
-            <p class="text-small font-light mb-4">While the Synxis Booking Engine is a powerful platform, luxury brands like The Peninsula Hotels & Resorts require a digital experience that transcends 'out-of-the-box' functionality. During my tenure, I became the lead specialist for these high-profile customizations, with the Peninsula project serving as the final milestone of my work in this capacity.</p>
+            <p class="text-small font-light mb-4">While the Synxis Booking Engine is a powerful platform, luxury brands like The Peninsula Hotels & Resorts require a digital experience that transcends 'out-of-the-box' functionality. </p>
         </div>
         <div class="col-12">
             <div class="card-white reveal-card mb-4">
                 <div class="col-12 col-lg-8 card-body">
                     <h2 class="h4 mb-3">Project Overview</h2>
-                    <p>Peninsula Hotels & Resorts required a comprehensive overhaul of their booking experience to align with their new brand identity, while including key content areas to provide guest information and improve the booking experience.</p>
-                </div>
-                <div class="col-12 col-lg-4 card-body">
+                    <p>During my tenure, I became the lead specialist for these high-profile customizations, with the Peninsula project serving
+                    as the final milestone of my work in this capacity. They required a comprehensive overhaul of their booking experience to align with their new brand identity, while including key content areas to provide guest information and improve the booking experience.</p>                    
                     <ul class="highlight__green">
                         <li><b>Role:</b> Frontend Developer & Technical Consultant</li>
                         <li><b>Technologies:</b> JavaScript, CSS, HTML5</li>
@@ -97,11 +96,11 @@
         <div class="col-12 col-lg-6">
             <div class="card-transparent reveal-card mb-lg-4">
                 <div class="cold-12">
-                    <h2 class="h4 mb-3">The Challenge</h2>
-                    <p>The core application code and structure remained immutable. To achieve the desired UI/UX, an additional layer was included using only external HTML, CSS and JavaScript. This required a deep understanding of the booking engine's functionality and DOM structure to ensure all customizations were safe and adapt to future platform updates.</p>
-                    <h2 class="h4 mb-3">The Process</h2>
+                    <h2 class="h4 mb-3">The Challenge & Approach</h2>
+                    <p>The core application code and structure remained immutable. To achieve the desired UI/UX, an additional layer was included using only external HTML, CSS and JavaScript. This required a deep understanding of the booking engine's functionality and DOM structure to ensure all customizations were safe and would adapt to future platform updates..</p>
                     <p>Acting as both a developer and a technical advisor, I bridged the gap between high-fidelity creative visions and technical feasibility.</p>
                     <p>Using the client's prototypes as a baseline, I conducted a comprehensive feasibility analysis, identifying potential constraints and proposing alternatives. I offered expert guidance on UI/UX best practices and provided creative workarounds for technical limitations.</p>
+                    <p>One of the main challenges in the initial design was presenting the booking benefits section over the hero image, this presented UX and accessibility issues. Placing such complex content over the image would result in either readability issues or obscuring a big portion of the image, losing the visual impact. My proposed approach was to keep the booking benefits as a sidebar, that the user can refer to while reviewing the available products, while keeping the visual interest of the hero image. Instead, keeping the promotional banner over the hero image provides a prominent location for future marketing actions that can drive conversions.</p>
                 </div>
             </div>
         </div>
@@ -110,8 +109,9 @@
                 <div class="cold-12">
                     <h2 class="h4  mb-3">The Solution</h2>
                     <p>I created a standard setup based on their brand identity, translating their website styling to a booking engine theme. With this in place, it allowed me to add the customization layer to complete the customer's vision, which included the following key features:</p>
-                    <p class="highlight__purple"><b>JavaScript-driven Enhancements:</b> hero system that delivered imagery and promotional content tailored to specific hotel properties. Bespoke modules for online booking benefits and direct-assistance contact</p>
-                    <p class="highlight__purple"><b>Custom Feature Integration:</b> custom display layer to showcase high-tier suites not available for direct online booking.</p>
+                    <p class="highlight__purple"><b>JavaScript-driven Enhancements:</b> hero system that delivered imagery and promotional content tailored to specific hotel properties. Bespoke modules for online booking benefits and direct-assistance contact. This reduced their previous approach of maintaining one theme per hotel down to a single shared theme and configuration
+                    file — significantly simplifying long-term maintenance. Careful use of JS to manipulate the DOM to add new sections in the page such as the booking benefits and assistance allowed a safe and maintainable solution for areas of information for the guests.</p>
+                    <p class="highlight__purple"><b>Custom Feature Integration:</b> custom display layer to showcase high-tier suites not available for direct online booking. This was achieved by adding plain HTML to one of the supported content areas in the theme. The suites are always displayed, regardless of the search results.</p>
                     <p class="highlight__purple"><b>System Refinement:</b> refined global interactive elements, typography, and header for a seamless, high-end feel.</p>
                 </div>
             </div>

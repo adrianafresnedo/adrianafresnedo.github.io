@@ -22,7 +22,7 @@
 </head>
 <body>
 <header id="header" class="mb-4" aria-label="Main navigation">
-    <div class="container-xxl">
+    <div class="container">
         <nav class="row align-items-center">
             <div class="col-2"><a href="index.html" class="initials" title="homepage">AF</a></div>
             <div class="col-10 menu text-end">
@@ -38,7 +38,7 @@
     </div>
 </header>
 <div id="nav-spacer"></div>
-<main class="container-xxl">
+<main class="container">
     <section class="project row">
         <div class="col-12 col-lg-8">
             <h1 class="h2 reveal-heading icon__ticket mb-3">HTML Email Setups</h1>
@@ -51,8 +51,8 @@
                     <p>Email development remains a fragmented landscape. Modern HTML5 tags often break in legacy clients, forcing a reliance on
                     table-based layouts. Additionally, inconsistent support for CSS3, background images, and custom typography created a
                     high risk of "broken" layouts, requiring significant manual troubleshooting for every new hotel client.</p>
-                </div>
-                <div class="col-12 col-lg-4 card-body">
+                    <p>As Technical Lead, I inherited a process where every new hotel client required a hand-coded email from scratch —
+                    unsustainable at scale.</p>
                     <ul class="highlight__purple">
                         <li><b>Role:</b> Technical Lead & Frontend Developer</li>
                         <li><b>Technologies:</b> CSS, HTML5</li>
@@ -69,7 +69,7 @@
                         <li><b>Modular Architecture:</b>  We built a library of standardized blocks (multiple columns, single columns list, with/without images, hero, buttons, headings, etc) that could be rearranged to fit any hotel's specific layout.</li>
                         <li><b>Variable-Driven Customization:</b> Designed the system to be "thematic." By updating a centralized set of configuration
                         variables, the entire component library would inherit a hotel’s brand identity instantly.</li>
-                        <li><b>Hybrid Layout Engine:</b> Developed a robust framework utilizing nested tables mixed with modern breakpoint CSS to ensure responsiveness when possible.</li>
+                        <li><b>Hybrid Layout Engine:</b> Developed a robust framework utilizing nested tables mixed with modern breakpoint CSS to ensure responsiveness when possible. A necessary approach given email clients notoriously inconsistent CSS and modern HTML support.</li>
                         <li><b>Resilient Design:</b> Implemented robust CSS fallbacks and web-safe font stacks to ensure a professional experience,
                         regardless of the recipient's device or client.</li>
                         <li><b>Accessibility-First:</b> Updated the system to include semantic structures and ARIA roles, ensuring all automated
@@ -192,7 +192,8 @@
                     <h2 class="h4  mb-3">The Results</h2>
                     <p>The framework transformed our workflow. Instead of hand-coding unique layouts, teams could leverage a global variable
                     system for colors and typography. This allowed us to move from a blank slate to a fully branded, production-ready layout
-                    in minutes rather than hours, freeing up design time for creative customization.</p>
+                    in minutes rather than hours, freeing up design time for creative customization and allowing less technical team members to produce production-ready hotel emails independently.</p>
+                    <p>Initiated in 2018, the system was continuously expanded to support evolving email client standards and adapting to improvemens in accesibility through 2025.</p>
                 </div>
             </div>
         </div>

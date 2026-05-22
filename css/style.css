@@ -82,7 +82,7 @@
 }
 
 /* Display */
-.homepage .container {
+.container {
   max-width: 1100px;
 }
 
@@ -617,13 +617,14 @@ h6 {
   margin-bottom: 0;
 }
 
-.work ul {
+.work ul, .project ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.work ul li {
+.work ul li,
+.project ul li {
   display: inline-block;
   margin: 0;
   margin-inline-end: 1rem;  
