@@ -21,67 +21,67 @@
     </script>
 </head>
 <body>
-    <header id="header" class="mb-4" aria-label="Main navigation">
-        <div class="container-xxl">
-            <nav class="row align-items-center">
-                <div class="col-2"><a href="index.html" class="initials" title="homepage">AF</a></div>
-                <div class="col-10 menu text-end">
-                    <ul>
-                        <li><a href="index.html#work">Work</a></li>
-                        <li><a href="art.html">Art</a></li>
-                        <li><a href="index.html#skills">Skills</a></li>
-                        <li><a href="https://www.linkedin.com/in/adriana-fresnedo/" target="_blank"
-                                aria-label="LinkedIn profile" title="LinkedIn profile"><i class="fa-brands fa-linkedin"
-                                    aria-hidden="true"></i></a></li>
-                        <li><a href="mailto:anetalaya@gmail.com" aria-label="Email me" title="Email me"><i
-                                    class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </nav>
+<header id="header" class="mb-4" aria-label="Main navigation">
+    <div class="container-xxl">
+        <nav class="row align-items-center">
+            <div class="col-2"><a href="index.html" class="initials" title="homepage">AF</a></div>
+            <div class="col-10 menu text-end">
+                <ul>
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="art.html">Art</a></li>
+                    <li><a href="https://www.linkedin.com/in/adriana-fresnedo/" target="_blank"
+                            aria-label="LinkedIn profile" title="LinkedIn profile"><i class="fa-brands fa-linkedin"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:anetalaya@gmail.com" aria-label="Email me" title="Email me"><i
+                                class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div id="nav-spacer"></div>
+<main class="container-xxl">
+    <section class="art row">
+        <div class="col-12 col-lg-8">
+            <h1 class="h2 reveal-heading icon__ticket mb-3">Art</h1>
+            <p class="text-small font-light mb-4">My other love is art and it influences my design work.</p>
         </div>
-    </header>
-    <div id="nav-spacer"></div>
-    <main class="container-xxl">
-        <section class="art row">
-            <div class="col-12 col-lg-8">
-                <h1 class="h2 reveal-heading icon__ticket mb-3">Art</h1>
-                <p class="text-small font-light mb-4">My other love is art and it influences my design work.</p>
-            </div>
-            <div class="masonry mb-5" id="gallery"></div>
-            <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Art image gallery" aria-hidden="true">
-                <div class="lightbox-wrap">
-                    <button class="lightbox-close" id="lightbox-close">Close</button>
-                    <div class="lb-frame">
-                        <img src="" alt="" id="lb-img">
-                        <div class="lb-frame-caption">
-                            <span class="lb-title" id="lb-title"></span>
-                            <span class="lb-counter" id="lb-counter"></span>
-                        </div>
+        <div class="masonry mb-5" id="gallery"></div>
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Art image gallery" aria-hidden="true">
+            <div class="lightbox-wrap">
+                <button class="lightbox-close" id="lightbox-close">Close</button>
+                <div class="lb-frame">
+                    <img src="" alt="" id="lb-img">
+                    <div class="lb-frame-caption">
+                        <span class="lb-title" id="lb-title"></span>
+                        <span class="lb-counter" id="lb-counter"></span>
                     </div>
-                    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="previous image"><i class="fa-solid fa-angle-left" aria-hidden="true"></i></button>
-                    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="next image"><i class="fa-solid fa-angle-right" aria-hidden="true"></i></button>
                 </div>
+                <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="previous image"><i class="fa-solid fa-angle-left" aria-hidden="true"></i></button>
+                <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="next image"><i class="fa-solid fa-angle-right" aria-hidden="true"></i></button>
             </div>
-            <script>
-                const images = [
-                    { src: 'img/arte_plumas.jpg', title: 'Boy with the Feather Crown' },                    
-                    { src: 'img/arte_panueloazul.jpg', title: 'The Blue Veil' },                    
-                    { src: 'img/arte_nocturno.jpg', title: 'The Midnight Performer' },                    
-                    { src: 'img/arte_colorada.jpg', title: 'Crimson Curls, Blue Skies' },
-                    { src: 'img/arte_astronauta.jpg', title: 'Cosmic Wonder' },
-                    { src: 'img/arte_buho_rojo.jpg', title: 'Crimson Owl' },
-                    { src: 'img/arte_ojosverdes.jpg', title: 'The Emerald Glance' },
-                    { src: 'img/arte_plumas2.jpg', title: 'The Purple Plume' }, 
-                    { src: 'img/arte_senora_azul.jpg', title: 'The Elongated Portrait' },
-                    { src: 'img/arte_sombrerorojo.jpg', title: 'The Red Top Hat' },
-                    { src: 'img/arte_voladosysombrero.jpg', title: 'The Emerald Performer' },                
-                    { src: 'img/arte_zigzag.jpg', title: 'The Zig-zag Melancholy' },
-                    { src: 'img/arte_buhopataslargas.jpg', title: 'Jungle Mystique' }
-                ];
-            </script>
-        </section>
-    </main>
-    <script src="js/art_gallery.js"></script>
-    <script src="js/animations.js"></script>
+        </div>
+        <script>
+            const images = [
+                { src: 'img/arte_plumas.jpg', title: 'Boy with the Feather Crown' },                    
+                { src: 'img/arte_panueloazul.jpg', title: 'The Blue Veil' },                    
+                { src: 'img/arte_nocturno.jpg', title: 'The Midnight Performer' },                    
+                { src: 'img/arte_colorada.jpg', title: 'Crimson Curls, Blue Skies' },
+                { src: 'img/arte_astronauta.jpg', title: 'Cosmic Wonder' },
+                { src: 'img/arte_buho_rojo.jpg', title: 'Crimson Owl' },
+                { src: 'img/arte_ojosverdes.jpg', title: 'The Emerald Glance' },
+                { src: 'img/arte_plumas2.jpg', title: 'The Purple Plume' }, 
+                { src: 'img/arte_senora_azul.jpg', title: 'The Elongated Portrait' },
+                { src: 'img/arte_sombrerorojo.jpg', title: 'The Red Top Hat' },
+                { src: 'img/arte_voladosysombrero.jpg', title: 'The Emerald Performer' },                
+                { src: 'img/arte_zigzag.jpg', title: 'The Zig-zag Melancholy' },
+                { src: 'img/arte_buhopataslargas.jpg', title: 'Jungle Mystique' }
+            ];
+        </script>
+    </section>
+</main>
+<script src="js/art_gallery.js"></script>
+<script src="js/animations.js"></script>
 </body>
 </html>
