@@ -13,7 +13,7 @@ let triggerEl = null;
 const items = [];
 images.forEach((img, i) => {
     const button = document.createElement('button');
-    button.className = 'item card-white reveal-card mb-3';
+    button.className = 'item card-white reveal-card';
     button.setAttribute('aria-label', `Open ${img.title}`);
     button.innerHTML = `
     <span class="item-img-wrap">

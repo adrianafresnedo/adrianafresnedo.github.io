@@ -1,14 +1,8 @@
 /* ── Sticky nav ─────────────────────────────────────────────────────────── */
-const nav = document.getElementById('main-nav');
+const nav = document.getElementById('header');
 const spacer = document.getElementById('nav-spacer');
 
-const updateOffset = () => {
-    nav.style.setProperty('--nav-offset', `${spacer.getBoundingClientRect().left}px`);
-};
-
-updateOffset();
-
-window.addEventListener('resize', updateOffset, { passive: true });
+window.addEventListener('resize', { passive: true });
 
 const navBottom = nav.getBoundingClientRect().bottom + window.scrollY;
 

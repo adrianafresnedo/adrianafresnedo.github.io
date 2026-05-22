@@ -82,6 +82,10 @@
 }
 
 /* Display */
+.homepage .container {
+  max-width: 1100px;
+}
+
 .hidden-md {
   display: none;
 }
@@ -239,10 +243,10 @@ h6 {
 .card-white {
   background: #fff;
   border-radius: var(--bs-border-radius);
-  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  padding: 2rem;
 }
 
 .card-transparent {
@@ -253,6 +257,7 @@ h6 {
 
 .card-gray {
   background: #F6F6F7;
+  padding: 2rem;
 }
 
 .expanded {
@@ -483,6 +488,18 @@ h6 {
 }
 
 /* Header */
+#header {
+  border-bottom: 1px solid var(--bs-gray-300);
+}
+
+#header .initials {
+  font-family: Oswald, sans-serif;
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-super-bold);
+  color: var(--bs-gray-900);
+  text-decoration: none;
+}
+
 #header .menu {
   position: relative;
   font-size: var(--text-small);
@@ -491,27 +508,25 @@ h6 {
 #header .menu ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 #header .menu ul li {
   display: inline-block;
+  margin: 0;
   margin-inline-end: 1rem;
-  background: var(--bs-gray-200);
-  border-radius: 0 0 var(--bs-border-radius-lg) var(--bs-border-radius-lg);
 }
 
 #header .menu ul li:last-child {
   margin: 0;
 }
 
-#header .menu ul li:hover {
-  background: var(--bs-white);
+#header .menu ul li a {
+  text-decoration: none;
 }
 
-#header .menu ul li a {
-  padding: .5rem 1rem;
-  text-decoration: none;
-  display: block;
+#header .menu ul li a:hover {
+  text-decoration: underline;
 }
 
 /* About Me */
@@ -559,10 +574,12 @@ h6 {
 #aboutMe ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 #aboutMe ul li {
   display: inline-block;
+  margin: 0;
   margin-inline-end: 1rem;
 }
 
@@ -570,28 +587,72 @@ h6 {
   margin: 0;
 }
 
+#aboutMe p {
+  margin-bottom: .5rem;
+}
+
+#aboutMe .much_ex {
+  color: var(--bs-blue);
+  font-weight: var(--font-weight-bold);
+}
+
 /* Work */
+.work .reveal-card {
+  display:flex;
+}
+
+.work .card-white {
+  flex-direction: column;
+  padding: 0;
+  position: relative;
+  border: 2px solid var(--bs-gray-800);
+  overflow: hidden;
+}
+
 .work .image__thumb {
-  background: var(--bs-gray-900);
-  border: 12px solid var(--bs-gray-900);
-  border-radius: var(--bs-border-radius);
+  border-bottom: 2px solid var(--bs-gray-300);
+}
+
+.work .h3, .work .text-muted {
+  margin-bottom: 0;
+}
+
+.work ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.work ul li {
+  display: inline-block;
+  margin: 0;
+  margin-inline-end: 1rem;  
+}
+
+.work__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /* Art */
 .art .masonry {
-  columns: 5;
-  column-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
 }
 
 @media (max-width: 992px) {
-  .art .masonry {
-    columns: 3;
+.art .masonry {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .art .masonry {
-    columns: 2;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -613,8 +674,11 @@ h6 {
 
 .art .item img {
   width: 100%;
+  aspect-ratio: 2 / 3;
   display: block;
   transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  object-fit:cover;
+  object-position: center;
 }
 
 .art .item:hover img {
@@ -833,39 +897,43 @@ h6 {
 }
 
 /* Sticky nav  */
-#main-nav.sticky {
+#header.sticky {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   margin: 0;
-  margin-left: var(--nav-offset);
   z-index: 900;
+  background: var(--bs-gray-100);
 }
 
-#main-nav.sticky li {
+#header.sticky li {
   opacity: 0;
   animation: pillDrop 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-#main-nav.sticky li:nth-child(1) {
+#header.sticky li:nth-child(1) {
   animation-delay: 0ms;
 }
 
-#main-nav.sticky li:nth-child(2) {
+#header.sticky li:nth-child(2) {
   animation-delay: 75ms;
 }
 
-#main-nav.sticky li:nth-child(3) {
+#header.sticky li:nth-child(3) {
   animation-delay: 150ms;
 }
 
-#main-nav.sticky li:nth-child(4) {
+#header.sticky li:nth-child(4) {
   animation-delay: 225ms;
 }
 
-#main-nav.sticky+#nav-spacer {
-  height: 62px;
+#header.sticky li:nth-child(5) {
+  animation-delay: 300ms;
+}
+
+#header.sticky+#nav-spacer {
+  height: 50px;
 }
 
 @keyframes pillDrop {

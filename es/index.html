@@ -1,4 +1,4 @@
-<html lang="en-US" dir="ltr" id="html">
+<html lang="es" dir="ltr" id="html">
 <head>    
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
@@ -21,41 +21,42 @@
     </script>
 </head>
 <body>
-<header class="container-xxl" id="header">
-    <div class="row mb-4">
-        <nav class="col-12 menu center" id="main-nav" aria-label="Navegacion principal">
-            <ul>
-                <li><a href="#work">Proyectos</a></li>
-                <li><a href="#art">Arte</a></li>
-                <li><a href="#skills">Competencias</a></li>
-            </ul>
+<header id="header" class="mb-4" aria-label="Main navigation">
+    <div class="container">
+        <nav class="row align-items-center">
+            <div class="col-2"><span class="initials" aria-hidden="true">AF</span></div>
+            <div class="col-10 menu text-end">
+                <ul>
+                    <li><a href="#work">Proyectos</a></li>
+                    <li><a href="art.html">Arte</a></li>
+                    <li><a href="#skills">Competencias</a></li>
+                    <li><a href="https://www.linkedin.com/in/adriana-fresnedo/" target="_blank" aria-label="Perfil LinkedIn" title="Perfil LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:anetalaya@gmail.com" aria-label="Envíame un email" title="Envíame un email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
         </nav>
-        <div id="nav-spacer"></div>
     </div>
 </header>
-<main class="container-xxl">
+<div id="nav-spacer"></div>
+<main class="container">
     <section class="row mb-5" id="aboutMe">
         <div class="col-12 mb-3 aboutMe__img show-md">
             <img src="../img/profile.png" alt="Retrato de cerca de una mujer con ojos verdes y cabello castaño claro ondulado.">
         </div>
         <div class="w-100"></div>
         <div class="col">
+            <ul class="highlight__green text-small">
+                <li><b>Diseño UX/UI</b></li>
+                <li><b>Desarrollo Frontend</b></li>
+                <li><b>Accesibilidad</b></li>
+                <li><b>Artes Plásticas</b></li>
+            </ul>
             <h1 class="display-4 mb-3">Hola,<br>Soy Adriana Fresnedo</h1>
-            <p>
-                una desarrolladora front-end y diseñadora UX/UI multidisciplinar con una base creativa en bellas artes y un profundo
-                compromiso con la accesibilidad digital. Me especializo en la creación de aplicaciones web inclusivas y de alto
-                rendimiento, cerrando la brecha entre el diseño visual sofisticado y un código limpio que cumple con los estándares.<br><br>                
-                <a href="adriana_fresnedo_cv_es.pdf" class="btn btn-primary"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Descargar CV</a>
-            </p>
-            <h2 class="h6 mt-5 mb-3">Conectemos:</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/adriana-fresnedo/" target="_blank" aria-label="Perfil LinkedIn"
-                        class="btn btn-primary" title="Perfil LinkedIn"><i class="fa-brands fa-linkedin"
-                            aria-hidden="true"></i></a></li>
-                <li><a href="mailto:anetalaya@gmail.com" aria-label="Envíame un email" class="btn btn-primary" title="Envíame un email"><i
-                            class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
-                <li><a href="tel:+5491162265811" aria-label="Llámame" class="btn btn-primary" title="Llámame"><i
-                            class="fa-solid fa-mobile" aria-hidden="true"></i></a></li>
+            <p class="font-light text-small">Diseñadora UX/UI y desarrolladora front-end multidisciplinar que conecta el diseño visual sofisticado con un código limpio y accesible.</p>
+            <p class="text-small much_ex"><i class="fa-solid fa-award" aria-hidden="true"></i> 25 años de experiencia</p>
+            <ul class="mt-4">
+                <li><a href="#work" class="btn btn-primary">Ver Projectos</a></li>
+                <li><a href="adriana_fresnedo_cv_es.pdf" class="btn btn-outline-primary">Descargar CV</a></li>
             </ul>
         </div>
         <div class="col-12 col-md-4 aboutMe__img hidden-md">
@@ -66,158 +67,102 @@
         <div class="col-12">
             <h2 class="h2 reveal-heading icon__ticket">Proyectos Seleccionados</h2>
             <p class="text-small font-light">Esta es una pequeña muestra del trabajo que he realizado en mis 25 años de experiencia en diseño y desarrollo web.</p>
-            <div class="card-white reveal-card mb-4">
-                <div class="col-12 col-md-5 image__thumb">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 reveal-card mb-4">
+            <div class="card-white">
+                <div class="image__thumb">
                     <img src="../img/sbe_thumb.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-12 col-md-7 pt-4 ps-md-5 pt-md-0 expanded">
-                    <div>
-                        <h3 class="h3">Synxis Booking Engine</h3>
-                        <p>El Synxis Booking Engine es una aplicación web altamente personalizable que permite a las cadenas hoteleras
-                        —desde resorts de lujo hasta Bed & Breakfast boutique— integrar una experiencia de reserva fluida en sus propios sitios
-                        web.</p>
-                        <ul class="highlight__purple">
-                            <li><b>Rol:</b> Diseñadora y Desarrolladora Frontend</li>
-                            <li><b>Tecnologías:</b> HTML, Sass, JSON, React</li>
-                            <li><b>Duración:</b> 1 mes</li>
-                            <li><b>Año:</b> 2014</li>
-                        </ul>
-                        <br>
-                    </div>
-                    <div>
-                        <a href="sbe.html" class="btn btn-sm btn-primary">Ver el projecto<span class="sr-only">Synxis Booking Engine</span> <i class="fa-solid fa-angles-right" aria-hidden="true"></i></a>
-                    </div>                    
+                <div class="p-3">
+                    <h3 class="h3">Synxis Booking Engine</h3>
+                    <p class="text-small text-muted">2014 · 1 mes</p>
+                    <p class="text-small">Diseñadora y Desarrolladora Frontend</p>
+                    <p>Aplicación de reservas personalizable para cadenas hoteleras, desde resorts de lujo hasta Bed & Breakfast.</p>
+                    <ul class="highlight__purple">
+                        <li><b>HTML</b></li>
+                        <li><b>Sass</b></li>
+                        <li><b>JSON</b></li>
+                        <li><b>React</b></li>
+                    </ul>
+                    <a href="sbe.html" class="work__link"><span class="sr-only">Ver el projecto Synxis Booking Engine</span> </a>
                 </div>
             </div>
-            <div class="card-white reveal-card mb-4">
-                <div class="col-12 col-md-5 image__thumb">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 reveal-card mb-4">
+            <div class="card-white">
+                <div class="image__thumb">
                     <img src="../img/peninsula_thumb.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-12 col-md-7 pt-4 ps-md-5 pt-md-0 expanded">
-                    <div>
-                        <h3 class="h3">Personalización para Peninsula Hotels</h3>
-                        <p>Aunque el Synxis Booking Engine es una plataforma potente, las marcas de lujo como The Peninsula Hotels & Resorts
-                        requieren una experiencia digital que trascienda la funcionalidad convencional. Durante mi trayectoria, me convertí en
-                        la especialista líder para estas personalizaciones de alto perfil, siendo el proyecto de Peninsula el hito final de mi
-                        labor en esta función.</p>
-                        <ul class="highlight__green">
-                            <li><b>Rol:</b> Desarrolladora Frontend y Consultora Técnica</li>
-                            <li><b>Tecnologías:</b> JavaScript, CSS, HTML5</li>
-                            <li><b>Duración:</b> 2 meses</li>
-                            <li><b>Año:</b> 2025</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="peninsula.html" class="btn btn-sm btn-primary">Ver el projecto<span class="sr-only">Personalización para Peninsula Hotels</span>  <i class="fa-solid fa-angles-right" aria-hidden="true"></i></a>
-                    </div>
+                <div class="p-3">                    
+                    <h3 class="h3">Personalización para Peninsula Hotels</h3>
+                    <p class="text-small text-muted">2025 · 2 meses</p>
+                    <p class="text-small">Desarrolladora Frontend y Consultora Técnica</p>
+                    <p>Personalización de lujo de alto nivel. Una experiencia digital que va más allá de lo convencional.</p>
+                    <ul class="highlight__green">
+                        <li><b>JavaScript</b></li>
+                        <li><b>CSS</b></li>
+                        <li><b>HTML5</b></li>
+                    </ul>
+                    <a href="peninsula.html" class="work__link"><span class="sr-only">Ver el projecto Personalización para Peninsula Hotels</span></a>
                 </div>
             </div>
-            <div class="card-white reveal-card mb-4">
-                <div class="col-12 col-md-5 image__thumb">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 reveal-card mb-4">
+            <div class="card-white">
+                <div class="image__thumb">
                     <img src="../img/emails_thumb.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-12 col-md-7 pt-4 ps-md-5 pt-md-0 expanded">
-                    <div>
-                        <h3 class="h3">Sistemas de Emails en HTML</h3>
-                        <p>Para mantener la consistencia de marca y la velocidad del equipo, diseñé un sistema de correos electrónicos HTML
-                        responsive. Mediante el desarrollo de una biblioteca de componentes reutilizables y compatibles con diversos clientes de
-                        correo, logramos unir los complejos requisitos de los hoteles con una producción de alta eficiencia.</p>
-                        <ul class="highlight__purple">
-                            <li><b>Rol:</b> Líder Técnica y Desarrolladora Frontend</li>
-                            <li><b>Tecnologías:</b> CSS, HTML5</li>
-                            <li><b>Duración:</b> Evolución constante</li>
-                            <li><b>Año:</b> 2018 - 2025</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="emails.html" class="btn btn-sm btn-primary">Ver el projecto<span class="sr-only">Sistemas de Emails en HTML</span>  <i class="fa-solid fa-angles-right" aria-hidden="true"></i></a>
-                    </div>
+                <div class="p-3">
+                    <h3 class="h3">Sistemas de Emails en HTML</h3>
+                    <p class="text-small text-muted">2018 - 2025 · Evolución constante</p>
+                    <p class="text-small">Líder Técnica y Desarrolladora Frontend</p>
+                    <p>Biblioteca de componentes reutilizables para múltiples clientes que conecta los requisitos hoteleros con una producción
+                    rápida.</p>
+                    <ul class="highlight__purple">
+                        <li><b>CSS</b></li>
+                        <li><b>HTML5</b></li>
+                    </ul>
+                    <a href="emails.html" class="work__link"><span class="sr-only">Ver el projecto Sistemas de Emails en HTML</span></a>
                 </div>
-            </div><div class="card-white reveal-card mb-4">
-                <div class="col-12 col-md-5 image__thumb">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 reveal-card mb-4">
+            <div class="card-white">
+                <div class="image__thumb">
                     <img src="../img/verdulivery_thumb.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-12 col-md-7 pt-4 ps-md-5 pt-md-0 expanded">
-                    <div>
-                        <h3 class="h3">Verdulivery</h3>
-                        <p>Verdulivery es una pequeña empresa dedicada a la entrega a domicilio de productos frescos y artículos de almacén.
-                        Necesitaban explorar una forma de distribuir su lista de productos de manera efectiva.</p>
-                        <ul class="highlight__green">
-                            <li><b>Rol:</b> Diseñadora y Desarrolladora Frontend</li>
-                            <li><b>Tecnologías:</b> Wordpress, CSS, HTML5</li>
-                            <li><b>Duración:</b> 1 mes</li>
-                            <li><b>Año:</b> 2022</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="verdulivery.html" class="btn btn-sm btn-primary">Ver el projecto<span class="sr-only">Verdulivery</span>  <i class="fa-solid fa-angles-right"
-                                aria-hidden="true"></i></a>
-                    </div>
+                <div class="p-3">
+                    <h3 class="h3">Verdulivery</h3>
+                    <p class="text-small text-muted">2022 · 1 mes</p>
+                    <p class="text-small">Diseñadora y Desarrolladora Frontend</p>
+                    <p>Catálogo en WordPress para una pequeña empresa que ofrece servicio de entrega de productos frescos.</p>
+                    <ul class="highlight__green">
+                        <li><b>Wordpress</b></li>
+                        <li><b>CSS</b></li>
+                        <li><b>HTML5</b></li>
+                    </ul>
+                    <a href="verdulivery.html" class="work__link"><span class="sr-only">Ver el projecto Verdulivery</span></a>
                 </div>
             </div>
-            <div class="card-white reveal-card">
-                <div class="col-12 col-md-5 image__thumb">
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 reveal-card mb-4">
+            <div class="card-white">
+                <div class="image__thumb">
                     <img src="../img/valhalla_thumb.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-12 col-md-7 pt-4 ps-md-5 pt-md-0 expanded">
-                    <div>
-                        <h3 class="h3">Valhalla</h3>
-                        <p>Un proyecto personal muy querido que me permitió llevar la identidad de marca a un espacio físico. En un mercado lleno
-                        de tiendas de cerveza de inspiración rockera y oscura, Valhalla destacó mediante una estética "Viking-meets-Comic".
-                        Supervisé todo el apartado visual: desde el logotipo y las etiquetas de los growlers hasta el mural pintado a mano en la
-                        fachada de la tienda.</p>
-                        <ul class="highlight__purple">
-                            <li><b>Rol:</b> Diseñadora gráfica</li>
-                            <li><b>Año:</b> 2019 - 2022</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="valhalla.html" class="btn btn-sm btn-primary">Ver el projecto<span class="sr-only">Valhalla</span>  <i class="fa-solid fa-angles-right" aria-hidden="true"></i></a>
-                    </div>
+                <div class="p-3">
+                    <h3 class="h3">Valhalla</h3>
+                    <p class="text-small text-muted">2019 - 2022 · 1 mes</p>
+                    <p class="text-small">Diseñadora gráfica</p>
+                    <p>Identidad de marca para una estación de recarga de cerveza artesanal con una estética que fusiona el estilo vikingo con el cómic.</p>
+                    <ul class="highlight__purple">
+                        <li><b>Adobe Suite</b></li>
+                    </ul>
+                    <a href="valhalla.html" class="work__link"><span class="sr-only">Ver el projecto Valhalla</span></a>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="row line__dash art mb-5" id="art">
-        <div class="col-12">
-            <h2 class="h2 reveal-heading icon__firu">Arte</h2>
-            <p class="text-small font-light">Mi otra pasión es el arte, y este influye directamente en mi trabajo de diseño.</p>
-            <div class="masonry mb-5" id="gallery"></div>            
-            <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Art image gallery" aria-hidden="true">
-                <div class="lightbox-wrap">
-                    <button class="lightbox-close" id="lightbox-close">Cerrar</button>
-                    <div class="lb-frame">
-                        <img src="" alt="" id="lb-img">
-                        <div class="lb-frame-caption">
-                            <span class="lb-title" id="lb-title"></span>
-                            <span class="lb-counter" id="lb-counter"></span>
-                        </div>
-                    </div>
-                    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="imagen anterior"><i class="fa-solid fa-angle-left" aria-hidden="true"></i></button>
-                    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="siguiente imagen"><i class="fa-solid fa-angle-right" aria-hidden="true"></i></button>
-                </div>
-            </div>
-            <script>
-                const images = [
-                    { src: '../img/arte_arabezcos.jpg', title: 'Arabescos' },
-                    { src: '../img/arte_astronauta.jpg', title: 'Astronauta' },
-                    { src: '../img/arte_buho_azul.jpg', title: 'Buho Azul' },
-                    { src: '../img/arte_buhopataslargas.jpg', title: 'Buho de Patas Largas' },
-                    { src: '../img/arte_colorada.jpg', title: 'Rojo' },
-                    { src: '../img/arte_invierno.jpg', title: 'Invierno' },
-                    { src: '../img/arte_nocturno.jpg', title: 'Nocturno' },
-                    { src: '../img/arte_ojosverdes.jpg', title: 'Ojos Verdes' },
-                    { src: '../img/arte_panueloazul.jpg', title: 'Pañuelo Azul' },
-                    { src: '../img/arte_plumas.jpg', title: 'Niño con corona de plumas' },
-                    { src: '../img/arte_plumas2.jpg', title: 'Plumas II' },
-                    { src: '../img/arte_senora_azul.jpg', title: 'Dama Azul' },
-                    { src: '../img/arte_soleado.jpg', title: 'Soleado' },
-                    { src: '../img/arte_sombrerorojo.jpg', title: 'Sombrero Rojo' },
-                    { src: '../img/arte_voladosysombrero.jpg', title: 'Volandos y Sombrero' }
-                ];
-            </script>
-        </div>
-    </section>
+    </section>    
     <section class="row line__dash skills mb-5" id="skills">
         <div class="col-12">
             <h2 class="h2 reveal-heading icon__hojas">Competencias</h2>
