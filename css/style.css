@@ -837,6 +837,11 @@ h6 {
   aspect-ratio: 3 / 2;
 }
 
+.two__column__uneven small {
+  grid-column: span 2;
+  text-align: end;
+}
+
 .two__column__even {
   display: grid;
   grid-template-columns: 1fr 1fr;

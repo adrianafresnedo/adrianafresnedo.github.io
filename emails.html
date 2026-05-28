@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" dir="ltr" id="html">
 <head>    
     <meta charset="utf-8">
@@ -69,7 +70,7 @@
                         <li><b>Modular Architecture:</b>  We built a library of standardized blocks (multiple columns, single columns list, with/without images, hero, buttons, headings, etc) that could be rearranged to fit any hotel's specific layout.</li>
                         <li><b>Variable-Driven Customization:</b> Designed the system to be "thematic." By updating a centralized set of configuration
                         variables, the entire component library would inherit a hotel’s brand identity instantly.</li>
-                        <li><b>Hybrid Layout Engine:</b> Developed a robust framework utilizing nested tables mixed with modern breakpoint CSS to ensure responsiveness when possible. A necessary approach given email clients notoriously inconsistent CSS and modern HTML support.</li>
+                        <li><b>Hybrid Layout Engine:</b> Developed a robust framework utilizing nested tables mixed with modern breakpoint CSS to ensure responsiveness when possible. A necessary approach given email clients' notoriously inconsistent CSS and modern HTML support.</li>
                         <li><b>Resilient Design:</b> Implemented robust CSS fallbacks and web-safe font stacks to ensure a professional experience,
                         regardless of the recipient's device or client.</li>
                         <li><b>Accessibility-First:</b> Updated the system to include semantic structures and ARIA roles, ensuring all automated
@@ -82,13 +83,12 @@
                     <h2 class="h4 mb-3">Live Samples</h2>
                     <p>Three hotel implementations built from the same modular system — each branded to a distinct identity — plus the neutral default template from which all variants originate.</p>  
                     <ul class="nav tabs-buttons mb-3" role="tablist" aria-label="Email samples">
-                        <li class="nav-item"><button class="nav-link tab-btn active" role="tab" aria-selected="true" aria-controls="pane-compton" id="tab-compton"
-                            onclick="switchTab('compton')">The Compton</button></li>                            
+                        <li class="nav-item"><button class="nav-link tab-btn active" role="tab" aria-selected="true" aria-controls="pane-compton" id="tab-compton" onclick="switchTab('compton')">The Compton</button></li>                            
                         <li class="nav-item"><button class="nav-link tab-btn" role="tab" aria-selected="false" aria-controls="pane-beijing" id="tab-beijing" onclick="switchTab('beijing')">East Beijing</button></li>
                         <li class="nav-item"><button class="nav-link tab-btn" role="tab" aria-selected="false" aria-controls="pane-temple" id="tab-temple" onclick="switchTab('temple')">The Temple House</button></li>
                         <li class="nav-item"><button class="nav-link tab-btn" role="tab" aria-selected="false" aria-controls="pane-default" id="tab-default" onclick="switchTab('default')">Default Template</button></li>
                     </ul>                    
-                    <div class="tab-panel active row" id="pane-compton" role="tabtab-panel" aria-labelledby="tab-compton">
+                    <div class="tab-panel active row" id="pane-compton" role="tabpanel" aria-labelledby="tab-compton">
                         <div class="col-12 col-lg-8 pb-4" id="compton-desktop">
                             <div class="desktop-frame">
                                 <div class="desktop-frame-bar">
@@ -111,7 +111,7 @@
                             </div>
                         </div>
                     </div>                
-                    <div class="tab-panel" id="pane-beijing" role="tabtab-panel" aria-labelledby="tab-beijing">                        
+                    <div class="tab-panel" id="pane-beijing" role="tabpanel" aria-labelledby="tab-beijing">                        
                         <div class="col-12 col-lg-8 pb-4" id="beijing-desktop">
                             <div class="desktop-frame">
                                 <div class="desktop-frame-bar">
@@ -134,7 +134,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-panel" id="pane-temple" role="tabtab-panel" aria-labelledby="tab-temple">
+                    <div class="tab-panel" id="pane-temple" role="tabpanel" aria-labelledby="tab-temple">
                         <div class="col-12 col-lg-8 pb-4" id="temple-desktop">
                             <div class="desktop-frame">
                                 <div class="desktop-frame-bar">
@@ -157,7 +157,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-panel" id="pane-default" role="tabtab-panel" aria-labelledby="tab-default">
+                    <div class="tab-panel" id="pane-default" role="tabpanel" aria-labelledby="tab-default">
                         <div class="col-12 pb-4">
                             <p class="text-small font-light">The unstyled base template showing all available modules. Each block is
                             independently configurable — swap colors, fonts, and content variables to instantly brand any hotel.</p>
@@ -193,7 +193,7 @@
                     <p>The framework transformed our workflow. Instead of hand-coding unique layouts, teams could leverage a global variable
                     system for colors and typography. This allowed us to move from a blank slate to a fully branded, production-ready layout
                     in minutes rather than hours, freeing up design time for creative customization and allowing less technical team members to produce production-ready hotel emails independently.</p>
-                    <p>Initiated in 2018, the system was continuously expanded to support evolving email client standards and adapting to improvemens in accesibility through 2025.</p>
+                    <p>Initiated in 2018, the system was continuously expanded to support evolving email client standards and adapting to improvements in accessibility through 2025.</p>
                 </div>
             </div>
         </div>
